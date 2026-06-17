@@ -1,0 +1,23 @@
+{
+  "name": "mongodb-transaction-race-demo",
+  "version": "1.0.0",
+  "description": "Node.js, Express, and MongoDB race condition demo with a transaction-based fix.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node scripts/seed.js",
+    "test:unsafe": "node scripts/testUnsafeRace.js",
+    "test:safe": "node scripts/testSafeRace.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
